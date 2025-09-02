@@ -1,14 +1,16 @@
-* {
+/* Reset */
+.navigation-container * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+.navigation-container body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-.navbar {
+/* Navigation bar styles */
+.navigation-container .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,32 +21,26 @@ body {
   z-index: 1000;
 }
 
-.logo {
+.navigation-container .logo {
   color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.nav-links {
+.navigation-container .nav-links {
   list-style: none;
   display: flex;
   gap: 2rem;
 }
 
-.nav-links li a {
+.navigation-container .nav-links li a {
   text-decoration: none;
   color: #fff;
   transition: color 0.3s;
 }
 
-.nav-links li a:hover {
+.navigation-container .nav-links li a:hover {
   color: #00bcd4;
 }
 
-/* Simple styling for sections (optional) */
-section {
-  height: 100vh;
-  padding: 2rem;
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #ddd;
-}
+/* Optional: section styling should probably go to home.css */

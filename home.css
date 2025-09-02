@@ -1,0 +1,52 @@
+/* Reset only inside home container */
+.home-container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-container {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  /* Optional: to limit background color only to home section */
+}
+
+/* Home Section */
+.home-container .home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.home-container .home-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.home-container .home-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.home-container .home-text {
+  max-width: 600px;
+}
+
+.home-container .home-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.home-container .home-text p {
+  font-size: 1.1rem;
+  color: #555;
+}
